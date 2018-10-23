@@ -12,6 +12,7 @@
 		0B075E6F217F745B00D00BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B075E6D217F745B00D00BC9 /* Main.storyboard */; };
 		0B075E71217F745D00D00BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B075E70217F745D00D00BC9 /* Assets.xcassets */; };
 		0B075E74217F745D00D00BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B075E72217F745D00D00BC9 /* LaunchScreen.storyboard */; };
+		C47ED473E5F1BE5092CC15D6 /* Pods_LyricsObtainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277E214DBE9C72B3407B9191 /* Pods_LyricsObtainer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0B075E70217F745D00D00BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B075E73217F745D00D00BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B075E75217F745D00D00BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277E214DBE9C72B3407B9191 /* Pods_LyricsObtainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyricsObtainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC45B9CA7503DB31561AD07 /* Pods-LyricsObtainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricsObtainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyricsObtainer/Pods-LyricsObtainer.release.xcconfig"; sourceTree = "<group>"; };
+		DF4EE32446678834B5F25A2A /* Pods-LyricsObtainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricsObtainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyricsObtainer/Pods-LyricsObtainer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47ED473E5F1BE5092CC15D6 /* Pods_LyricsObtainer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0B075E68217F745B00D00BC9 /* LyricsObtainer */,
 				0B075E67217F745B00D00BC9 /* Products */,
+				DE6488BC02E93E6347EB8B87 /* Pods */,
+				9AD3085AF53F82C864E0BBC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LyricsObtainer;
 			sourceTree = "<group>";
 		};
+		9AD3085AF53F82C864E0BBC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				277E214DBE9C72B3407B9191 /* Pods_LyricsObtainer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE6488BC02E93E6347EB8B87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EE32446678834B5F25A2A /* Pods-LyricsObtainer.debug.xcconfig */,
+				5EC45B9CA7503DB31561AD07 /* Pods-LyricsObtainer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B075E78217F745D00D00BC9 /* Build configuration list for PBXNativeTarget "LyricsObtainer" */;
 			buildPhases = (
+				4DDB2ADBCBBC118966C1AF21 /* [CP] Check Pods Manifest.lock */,
 				0B075E62217F745B00D00BC9 /* Sources */,
 				0B075E63217F745B00D00BC9 /* Frameworks */,
 				0B075E64217F745B00D00BC9 /* Resources */,
+				602C704D36E78875BFFBB965 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DDB2ADBCBBC118966C1AF21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LyricsObtainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		602C704D36E78875BFFBB965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LyricsObtainer/Pods-LyricsObtainer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyricsObtainer/Pods-LyricsObtainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B075E62217F745B00D00BC9 /* Sources */ = {
@@ -280,6 +347,7 @@
 		};
 		0B075E79217F745D00D00BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF4EE32446678834B5F25A2A /* Pods-LyricsObtainer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +365,7 @@
 		};
 		0B075E7A217F745D00D00BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC45B9CA7503DB31561AD07 /* Pods-LyricsObtainer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

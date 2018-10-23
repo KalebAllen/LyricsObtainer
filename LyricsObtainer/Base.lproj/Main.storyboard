@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vk5-yy-QgU">
-                                <rect key="frame" x="20" y="64" width="335" height="600"/>
+                                <rect key="frame" x="20" y="64" width="335" height="599.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oti-6A-9Mw">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="68.5"/>
@@ -39,29 +39,35 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Title of Song here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giB-66-JeS">
-                                        <rect key="frame" x="0.0" y="265.5" width="335" height="69"/>
+                                        <rect key="frame" x="0.0" y="265.5" width="335" height="68.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lyrics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsz-lU-SMq">
-                                        <rect key="frame" x="0.0" y="354.5" width="335" height="68.5"/>
+                                        <rect key="frame" x="0.0" y="354" width="335" height="68.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Song Lyrics go here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4cB-wh-Pr4">
-                                        <rect key="frame" x="0.0" y="443" width="335" height="68.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4cB-wh-Pr4">
+                                        <rect key="frame" x="0.0" y="442.5" width="335" height="68.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68.5" id="DY2-J9-Ch5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el6-Ho-i1W">
-                                        <rect key="frame" x="0.0" y="531.5" width="335" height="68.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="531" width="335" height="68.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" red="1" green="0.25544674299999998" blue="0.1163622359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submiteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujK-eR-haX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -78,6 +84,12 @@
                     <navigationItem key="navigationItem" title="Lyrics" id="d9y-CT-ul3">
                         <barButtonItem key="backBarButtonItem" title="Back" id="hRk-eM-qYB"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ArtistText" destination="tTB-sf-aV4" id="5z9-Dh-kqW"/>
+                        <outlet property="LyricsFeild" destination="4cB-wh-Pr4" id="1bH-Oz-Eex"/>
+                        <outlet property="SongTitle" destination="giB-66-JeS" id="Tdt-gh-Ukg"/>
+                        <outlet property="SubmitButton" destination="el6-Ho-i1W" id="foy-yv-wd5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
