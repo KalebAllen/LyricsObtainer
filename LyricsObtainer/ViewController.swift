@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ArtistText: UITextField!
     @IBOutlet weak var SongTitle: UITextField!
     @IBOutlet weak var LyricsFeild: UITextView!
@@ -21,7 +21,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ArtistText.delegate = self
+        SongTitle.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
     @IBAction func
         submiteButtonTapped(_ sender: Any) {
