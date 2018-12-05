@@ -49,10 +49,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //Full URL for the request we will make to the API
         let requestURL = lyricsAPIBaseURL + artistNameURLComponet + "/" + songTitleURLComponet
+        
         //using Alamo fire to create an actual request
         let request = Alamofire.request(requestURL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
+        
         //now we actually got to make our request
         request.responseJSON { response in
+            
             //we switch based on wather we scucced or not
             switch response.result {
             case .success(let value):
