@@ -64,10 +64,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.LyricsFeild.text = json["lyrics"].stringValue
                 
                 //in the case of suceed and we've gottne data
-                print("sucess!")
+                print("Got the Song!!")
             case .failure(let error):
                 //in the case of a failure the request did not get data back
-                print("error:(")
+                print("Cant't find what your looking for:(")
             }
         }
     }

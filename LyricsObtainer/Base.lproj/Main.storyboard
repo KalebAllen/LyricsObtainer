@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wei-dG-k2t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wei-dG-k2t">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,6 +70,32 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="giB-66-JeS" secondAttribute="trailing" id="4Mg-Ig-QFB"/>
+                                    <constraint firstItem="tTB-sf-aV4" firstAttribute="leading" secondItem="Vk5-yy-QgU" secondAttribute="leading" id="4XI-YJ-BTu"/>
+                                    <constraint firstItem="giB-66-JeS" firstAttribute="leading" secondItem="Vk5-yy-QgU" secondAttribute="leading" id="4jd-oQ-rpC"/>
+                                    <constraint firstAttribute="trailing" secondItem="tTB-sf-aV4" secondAttribute="trailing" id="5F8-LD-lEA"/>
+                                    <constraint firstItem="el6-Ho-i1W" firstAttribute="top" secondItem="4cB-wh-Pr4" secondAttribute="bottom" constant="20" id="78I-3Q-nwQ"/>
+                                    <constraint firstItem="6ls-HQ-2zO" firstAttribute="leading" secondItem="Vk5-yy-QgU" secondAttribute="leading" id="9ES-hf-XNg"/>
+                                    <constraint firstItem="el6-Ho-i1W" firstAttribute="top" secondItem="4cB-wh-Pr4" secondAttribute="bottom" constant="20" id="Awl-13-B5B"/>
+                                    <constraint firstItem="4cB-wh-Pr4" firstAttribute="top" secondItem="Lsz-lU-SMq" secondAttribute="bottom" constant="20" id="Bae-i7-uGn"/>
+                                    <constraint firstItem="tTB-sf-aV4" firstAttribute="top" secondItem="Oti-6A-9Mw" secondAttribute="bottom" constant="20" id="Cgu-jZ-Nws"/>
+                                    <constraint firstAttribute="trailing" secondItem="4cB-wh-Pr4" secondAttribute="trailing" id="ERD-cT-3Tm"/>
+                                    <constraint firstItem="6ls-HQ-2zO" firstAttribute="top" secondItem="tTB-sf-aV4" secondAttribute="bottom" constant="20" id="KPf-CC-Y2U"/>
+                                    <constraint firstItem="el6-Ho-i1W" firstAttribute="leading" secondItem="Vk5-yy-QgU" secondAttribute="leading" id="Rvd-xB-jaA"/>
+                                    <constraint firstItem="Lsz-lU-SMq" firstAttribute="top" secondItem="giB-66-JeS" secondAttribute="bottom" constant="20" id="S4A-0a-m7o"/>
+                                    <constraint firstItem="Lsz-lU-SMq" firstAttribute="top" secondItem="giB-66-JeS" secondAttribute="bottom" constant="20" id="YXN-Fx-LVt"/>
+                                    <constraint firstItem="6ls-HQ-2zO" firstAttribute="top" secondItem="tTB-sf-aV4" secondAttribute="bottom" constant="20" id="Ziw-11-jE5"/>
+                                    <constraint firstItem="giB-66-JeS" firstAttribute="top" secondItem="6ls-HQ-2zO" secondAttribute="bottom" constant="20" id="aNE-N9-wHD"/>
+                                    <constraint firstItem="4cB-wh-Pr4" firstAttribute="leading" secondItem="Vk5-yy-QgU" secondAttribute="leading" id="bcG-at-cRw"/>
+                                    <constraint firstItem="giB-66-JeS" firstAttribute="top" secondItem="6ls-HQ-2zO" secondAttribute="bottom" constant="20" id="gko-s3-T21"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lsz-lU-SMq" secondAttribute="trailing" id="ifB-qA-dRQ"/>
+                                    <constraint firstItem="Lsz-lU-SMq" firstAttribute="leading" secondItem="Vk5-yy-QgU" secondAttribute="leading" id="jHV-qN-OHZ"/>
+                                    <constraint firstItem="4cB-wh-Pr4" firstAttribute="top" secondItem="Lsz-lU-SMq" secondAttribute="bottom" constant="20" id="kcg-18-PsL"/>
+                                    <constraint firstAttribute="trailing" secondItem="el6-Ho-i1W" secondAttribute="trailing" id="klh-2V-NXc"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ls-HQ-2zO" secondAttribute="trailing" id="mu9-Zu-gRY"/>
+                                    <constraint firstAttribute="bottom" secondItem="el6-Ho-i1W" secondAttribute="bottom" id="vlG-0q-u8Q"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
