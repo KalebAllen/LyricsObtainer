@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 //in the case of suceed and we've gottne data
                 print("Got the Song!!")
-            case .failure(let error):
+            case .failure( _):
                 //in the case of a failure the request did not get data back
                 print("Cant't find what your looking for:(")
             }
