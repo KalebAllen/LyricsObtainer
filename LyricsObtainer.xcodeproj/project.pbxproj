@@ -64,8 +64,8 @@
 				0B075E69217F745B00D00BC9 /* AppDelegate.swift */,
 				0B075E6B217F745B00D00BC9 /* ViewController.swift */,
 				0B075E6D217F745B00D00BC9 /* Main.storyboard */,
-				0B075E70217F745D00D00BC9 /* Assets.xcassets */,
 				0B075E72217F745D00D00BC9 /* LaunchScreen.storyboard */,
+				0B075E70217F745D00D00BC9 /* Assets.xcassets */,
 				0B075E75217F745D00D00BC9 /* Info.plist */,
 			);
 			path = LyricsObtainer;
